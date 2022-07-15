@@ -90,10 +90,6 @@ const loginUsuario = async(req, res = response) => {
         })
     }
 
-    // res.status(201).json({
-    //     ok: true,
-    //     msg: 'Login'
-    // })
 }
 
 const revalidarToken = async(req, res = response) => {
@@ -105,6 +101,8 @@ const revalidarToken = async(req, res = response) => {
     
     res.json({
         ok: true,
+        uid,
+        name,
         token
     })
 }
